@@ -28,18 +28,7 @@ namespace Gander.Utils.DummyEmailGenerator
 
         private void GenerateEmails(int count, string outputPath)
         {
-            var seed = new[]
-            {
-                "Michaelangelo",
-                "Donatello",
-                "Raphael",
-                "Leonardo",
-                "Splinter",
-                "Shredder",
-                "Krang",
-                "Bebop",
-                "Rocksteady",
-            }.ToList();
+            var seed = GetNameSeeds();
             var names = new MarkovNameGenerator(seed, 1, 5);
 
             for (int i = 0; i < count; i++)
@@ -60,6 +49,31 @@ namespace Gander.Utils.DummyEmailGenerator
                 var output = Path.Combine(outputPath, id + ".txt");
                 File.WriteAllText(output, result.ToString(), Encoding.UTF8);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            InitializeSeedValues();
+        }
+
+        private void InitializeSeedValues()
+        {
+            chk
+        }
+
+        public List<string> GetNameSeeds()
+        {
+            var result = new List<string>();
+            foreach (var control in grpNameStyles.Controls)
+            {
+                var current = control as CheckBox;
+                if (current == null) continue;
+                if (!current.Checked) continue;
+
+                var seedValues = current.Tag as List<string>;
+                result.AddRange(seedValues);
+            }
+            return result;
         }
     }
 
