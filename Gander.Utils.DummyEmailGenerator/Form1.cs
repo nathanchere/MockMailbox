@@ -28,8 +28,7 @@ namespace Gander.Utils.DummyEmailGenerator
 
         private void GenerateEmails(int count, string outputPath)
         {
-            var seed = GetNameSeeds();
-            var names = new MarkovNameGenerator(seed, 1, 5);
+            var emailAddresses = GetEmailAddressGenerator();
 
             for (int i = 0; i < count; i++)
             {
@@ -51,31 +50,22 @@ namespace Gander.Utils.DummyEmailGenerator
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private EmailAddressGenerator GetEmailAddressGenerator()
         {
-            InitializeSeedValues();
-        }
-
-        private void InitializeSeedValues()
-        {
-            chk
-        }
-
-        public List<string> GetNameSeeds()
-        {
-            var result = new List<string>();
-            foreach (var control in grpNameStyles.Controls)
-            {
-                var current = control as CheckBox;
-                if (current == null) continue;
-                if (!current.Checked) continue;
-
-                var seedValues = current.Tag as List<string>;
-                result.AddRange(seedValues);
-            }
+            var result = new EmailAddressGenerator();
+            if (chkStyleElf.Checked) result.AddStyle(new EmailStyleElf());
+            if (chkStyleGreek.Checked) result.AddStyle(new EmailStyleGreek());
+            if (chkStyleNinjaTurtle.Checked) result.AddStyle(new EmailStyleNinjaTurtle());
+            if (chkStyleViking.Checked) result.AddStyle(new EmailStyleViking());
             return result;
+            
         }
-    }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {            
+        }
+                
+    }   
 
     public class EmailAddress
     {

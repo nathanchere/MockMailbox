@@ -40,13 +40,10 @@
             this.txtOutputPath = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.chkStyleViking = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.chkStyleElf = new System.Windows.Forms.CheckBox();
             this.grpNameStyles = new System.Windows.Forms.GroupBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chkStyleNinjaTurtle = new System.Windows.Forms.CheckBox();
+            this.chkStyleGreek = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numCountToGenerate)).BeginInit();
             this.grpNameStyles.SuspendLayout();
             this.SuspendLayout();
@@ -161,36 +158,22 @@
             this.chkStyleViking.Text = "Viking";
             this.chkStyleViking.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkStyleElf
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 49);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(38, 17);
-            this.checkBox3.TabIndex = 14;
-            this.checkBox3.Text = "Elf";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Enabled = false;
-            this.checkBox4.Location = new System.Drawing.Point(6, 70);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(54, 17);
-            this.checkBox4.TabIndex = 15;
-            this.checkBox4.Text = "Dwarf";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chkStyleElf.AutoSize = true;
+            this.chkStyleElf.Location = new System.Drawing.Point(6, 49);
+            this.chkStyleElf.Name = "chkStyleElf";
+            this.chkStyleElf.Size = new System.Drawing.Size(38, 17);
+            this.chkStyleElf.TabIndex = 14;
+            this.chkStyleElf.Text = "Elf";
+            this.chkStyleElf.UseVisualStyleBackColor = true;
             // 
             // grpNameStyles
             // 
-            this.grpNameStyles.Controls.Add(this.checkBox2);
-            this.grpNameStyles.Controls.Add(this.checkBox7);
-            this.grpNameStyles.Controls.Add(this.checkBox6);
-            this.grpNameStyles.Controls.Add(this.checkBox5);
+            this.grpNameStyles.Controls.Add(this.chkStyleNinjaTurtle);
+            this.grpNameStyles.Controls.Add(this.chkStyleGreek);
             this.grpNameStyles.Controls.Add(this.chkStyleViking);
-            this.grpNameStyles.Controls.Add(this.checkBox4);
-            this.grpNameStyles.Controls.Add(this.checkBox3);
+            this.grpNameStyles.Controls.Add(this.chkStyleElf);
             this.grpNameStyles.Location = new System.Drawing.Point(449, 12);
             this.grpNameStyles.Name = "grpNameStyles";
             this.grpNameStyles.Size = new System.Drawing.Size(139, 192);
@@ -198,49 +181,27 @@
             this.grpNameStyles.TabStop = false;
             this.grpNameStyles.Text = "Name Styles";
             // 
-            // checkBox7
+            // chkStyleNinjaTurtle
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Enabled = false;
-            this.checkBox7.Location = new System.Drawing.Point(6, 137);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(55, 17);
-            this.checkBox7.TabIndex = 18;
-            this.checkBox7.Text = "Greek";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.chkStyleNinjaTurtle.AutoSize = true;
+            this.chkStyleNinjaTurtle.Enabled = false;
+            this.chkStyleNinjaTurtle.Location = new System.Drawing.Point(6, 70);
+            this.chkStyleNinjaTurtle.Name = "chkStyleNinjaTurtle";
+            this.chkStyleNinjaTurtle.Size = new System.Drawing.Size(80, 17);
+            this.chkStyleNinjaTurtle.TabIndex = 19;
+            this.chkStyleNinjaTurtle.Text = "Ninja Turtle";
+            this.chkStyleNinjaTurtle.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // chkStyleGreek
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Enabled = false;
-            this.checkBox6.Location = new System.Drawing.Point(6, 116);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(60, 17);
-            this.checkBox6.TabIndex = 17;
-            this.checkBox6.Text = "Roman";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Enabled = false;
-            this.checkBox5.Location = new System.Drawing.Point(6, 93);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(81, 17);
-            this.checkBox5.TabIndex = 16;
-            this.checkBox5.Text = "Anglosaxon";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Enabled = false;
-            this.checkBox2.Location = new System.Drawing.Point(6, 160);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(77, 17);
-            this.checkBox2.TabIndex = 19;
-            this.checkBox2.Text = "NinjaTurtle";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkStyleGreek.AutoSize = true;
+            this.chkStyleGreek.Enabled = false;
+            this.chkStyleGreek.Location = new System.Drawing.Point(6, 93);
+            this.chkStyleGreek.Name = "chkStyleGreek";
+            this.chkStyleGreek.Size = new System.Drawing.Size(55, 17);
+            this.chkStyleGreek.TabIndex = 18;
+            this.chkStyleGreek.Text = "Greek";
+            this.chkStyleGreek.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -284,13 +245,10 @@
         private System.Windows.Forms.TextBox txtOutputPath;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox chkStyleViking;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox chkStyleElf;
         private System.Windows.Forms.GroupBox grpNameStyles;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox chkStyleGreek;
+        private System.Windows.Forms.CheckBox chkStyleNinjaTurtle;
     }
 }
 
