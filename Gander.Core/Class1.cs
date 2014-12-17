@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MailKit.Net.Pop3;
 
 namespace Gander.Core
 {
@@ -20,13 +21,13 @@ namespace Gander.Core
         {
             using (var client = new Pop3Client())
             {
-                client.Connect("pop.friends.com", 110, false);
+                client.Connect("localhost", 110, false);
 
                 // Note: since we don't have an OAuth2 token, disable
                 // the XOAUTH2 authentication mechanism.
                 client.AuthenticationMechanisms.Remove("XOAUTH2");
 
-                client.Authenticate("joey", "password");
+                client.Authenticate("testuser", "testpass");
 
                 int count = client.GetMessageCount();
                 for (int i = 0; i < count; i++)
