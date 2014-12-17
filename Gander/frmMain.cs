@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Gander.Core;
+using MailKit.Net.Pop3;
 
 namespace Gander
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
+        }
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }
