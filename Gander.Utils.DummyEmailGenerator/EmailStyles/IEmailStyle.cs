@@ -1,4 +1,6 @@
-﻿namespace Gander.Utils.DummyEmailGenerator
+﻿using System;
+
+namespace Gander.Utils.DummyEmailGenerator
 {
     public interface IEmailStyle
     {
@@ -9,6 +11,7 @@
     {
         protected override void InitialiseNames()
         {
+            throw new NotImplementedException();
             var seeds = new[]
             {
                 "",
@@ -18,6 +21,7 @@
 
         protected override void InitialiseDomains()
         {
+            throw new NotImplementedException();
             _domains = new[]
             {
                 "",
@@ -25,23 +29,23 @@
         }
     }
 
-    public class EmailStyle : EmailStyleRandom
-    {
-        protected override void InitialiseNames()
-        {
-            var seeds = new[]
-            {
-                "",
-            };
-            _names = new MarkovNameGenerator(seeds, 3, 2);
-        }
+    //public class EmailStyle : EmailStyleRandom
+    //{
+    //    protected override void InitialiseNames()
+    //    {
+    //        var seeds = new[]
+    //        {
+    //            "",
+    //        };
+    //        _names = new MarkovNameGenerator(seeds, 3, 2);
+    //    }
 
-        protected override void InitialiseDomains()
-        {
-            _domains = new[]
-            {
-                "",
-            };
-        }
-    }
+    //    protected override void InitialiseDomains()
+    //    {
+    //        _domains = new[]
+    //        {
+    //            "",
+    //        };
+    //    }
+    //}
 }
