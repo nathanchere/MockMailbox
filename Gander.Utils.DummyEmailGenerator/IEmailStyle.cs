@@ -8,7 +8,7 @@ namespace Gander.Utils.DummyEmailGenerator
         EmailAddress Generate();
     }
 
-    public class EmailGenerator
+    public class EmailGenerator : IEmailStyle
     {
         private readonly List<IEmailStyle> _emailStyles = new List<IEmailStyle>();
         private readonly Random _random = new Random();
