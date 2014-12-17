@@ -40,6 +40,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{CCC52DC8-C638-4169-A16B-66FD8D5BAAEF} = {76D3AAB1-3255-4B31-B9C2-E109A65DF658}
 		{AD45F277-C83C-4D4F-A3ED-31BDF5D9282A} = {76D3AAB1-3255-4B31-B9C2-E109A65DF658}
 	EndGlobalSection
 EndGlobal
