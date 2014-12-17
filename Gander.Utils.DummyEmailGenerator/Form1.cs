@@ -43,8 +43,34 @@ namespace Gander.Utils.DummyEmailGenerator
 
             for (int i = 0; i < count; i++)
             {
-
+                var result = new DummyEmail();
+                
             }
+        }
+    }
+
+    public class EmailAddress
+    {
+        private readonly string _name;
+        private readonly string _email;
+
+        public EmailAddress(string email)
+        {
+            _email = email;
+        }
+
+        public EmailAddress(string name, string email)
+        {
+            _name = name;
+            _email = email;
+        }
+
+        public override string ToString()
+        {
+            if (!string.IsNullOrEmpty(_name) && !string.IsNullOrEmpty(_email)) return string.Format("{0} <{1}>", _name, _email);
+            if (!string.IsNullOrEmpty(_name)) return _name;
+            if (!string.IsNullOrEmpty(_email)) return _email;
+            return "";
         }
     }
 
