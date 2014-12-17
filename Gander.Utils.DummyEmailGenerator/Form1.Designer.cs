@@ -131,6 +131,7 @@
             this.txtOutputPath.Name = "txtOutputPath";
             this.txtOutputPath.Size = new System.Drawing.Size(154, 20);
             this.txtOutputPath.TabIndex = 11;
+            this.txtOutputPath.Text = "E:\\source\\Gander\\Resources\\babypop3server\\temp\\testuser";
             // 
             // label5
             // 

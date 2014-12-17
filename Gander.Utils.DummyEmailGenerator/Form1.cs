@@ -56,8 +56,9 @@ namespace Gander.Utils.DummyEmailGenerator
                     Subject = "Hey something",
                     Body = "This is just a test email " + id,
                 };
-                
-                File.WriteAllText(outputPath, result.ToString(), Encoding.UTF8);
+
+                var output = Path.Combine(outputPath, id + ".txt");
+                File.WriteAllText(output, result.ToString(), Encoding.UTF8);
             }
         }
     }
@@ -104,7 +105,7 @@ namespace Gander.Utils.DummyEmailGenerator
             if (!string.IsNullOrEmpty(To)) result.AppendLine(string.Format("To:\t{0}", To));
             if (!string.IsNullOrEmpty(CC)) result.AppendLine(string.Format("CC:\t{0}", CC));
             if (!string.IsNullOrEmpty(Subject)) result.AppendLine(string.Format("Subject:\t{0}", Subject));
-            if (!string.IsNullOrEmpty(Body)) result.AppendLine(string.Format("Body:\t{0}", Body));
+            if (!string.IsNullOrEmpty(Body)) result.AppendLine(Body);
             return result.ToString();
         }
     }
