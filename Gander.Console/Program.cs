@@ -12,7 +12,8 @@ namespace Gander.Console
         static void Main(string[] args)
         {
             var client = new MailClient();
-
+            client.GetEmails();
+            System.Console.ReadKey();
         }
     }
 }

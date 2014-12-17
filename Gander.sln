@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gander", "Gander\Gander.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gander.Core", "Gander.Core\Gander.Core.csproj", "{C3C80DFC-0EAF-4F29-96FA-4E4BA7EF76A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gander.Console", "Gander.Console\Gander.Console.csproj", "{CCC52DC8-C638-4169-A16B-66FD8D5BAAEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C3C80DFC-0EAF-4F29-96FA-4E4BA7EF76A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3C80DFC-0EAF-4F29-96FA-4E4BA7EF76A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3C80DFC-0EAF-4F29-96FA-4E4BA7EF76A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCC52DC8-C638-4169-A16B-66FD8D5BAAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCC52DC8-C638-4169-A16B-66FD8D5BAAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCC52DC8-C638-4169-A16B-66FD8D5BAAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCC52DC8-C638-4169-A16B-66FD8D5BAAEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
