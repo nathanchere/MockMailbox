@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -21,11 +22,11 @@ namespace Gander.Utils.DummyEmailGenerator
         private void button1_Click(object sender, EventArgs e)
         {
             var count = Convert.ToInt32(numCountToGenerate.Value);
-
-            GenerateEmails(count);
+            var path = txtOutputPath.Text;
+            GenerateEmails(count, path);
         }
 
-        private void GenerateEmails(int count)
+        private void GenerateEmails(int count, string outputPath)
         {
             var seed = new[]
             {
@@ -43,8 +44,20 @@ namespace Gander.Utils.DummyEmailGenerator
 
             for (int i = 0; i < count; i++)
             {
-                var result = new DummyEmail();
+                var id = Guid.NewGuid();
+
+                var name = names.NextName();
+                var email = name + "@somedomain.com";
+                var result = new DummyEmail()
+                {
+                    To =  "you",
+                    From = new EmailAddress(name, email).ToString(),
+                    Sent = DateTime.Now.ToString(),
+                    Subject = "Hey something",
+                    Body = "This is just a test email " + id,
+                };
                 
+                File.WriteAllText(outputPath, result.ToString(), Encoding.UTF8);
             }
         }
     }
