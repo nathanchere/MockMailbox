@@ -69,6 +69,11 @@
             this.numCountToGenerate.Name = "numCountToGenerate";
             this.numCountToGenerate.Size = new System.Drawing.Size(78, 20);
             this.numCountToGenerate.TabIndex = 1;
+            this.numCountToGenerate.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
             // 
             // label1
             // 
@@ -184,7 +189,6 @@
             // chkStyleNinjaTurtle
             // 
             this.chkStyleNinjaTurtle.AutoSize = true;
-            this.chkStyleNinjaTurtle.Enabled = false;
             this.chkStyleNinjaTurtle.Location = new System.Drawing.Point(6, 70);
             this.chkStyleNinjaTurtle.Name = "chkStyleNinjaTurtle";
             this.chkStyleNinjaTurtle.Size = new System.Drawing.Size(80, 17);

@@ -45,9 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EmailStyles\EmailAddressGenerator.cs" />
+    <Compile Include="EmailStyles\EmailStyleElf.cs" />
     <Compile Include="EmailStyles\EmailStyleLookup.cs" />
     <Compile Include="EmailStyles\EmailStyleNinjaTurtle.cs" />
     <Compile Include="EmailStyles\EmailStyleRandom.cs" />
+    <Compile Include="EmailStyles\EmailStyleViking.cs" />
     <Compile Include="EmailStyles\IEmailStyle.cs" />
     <Compile Include="MarkovNameGenerator.cs" />
     <Compile Include="Form1.cs">

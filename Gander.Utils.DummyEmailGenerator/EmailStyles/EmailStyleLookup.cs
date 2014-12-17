@@ -12,6 +12,12 @@ namespace Gander.Utils.DummyEmailGenerator
         protected abstract void InitialiseNames();
         protected abstract void InitialiseDomains();
 
+        public EmailStyleLookup()
+        {
+            InitialiseNames();
+            InitialiseDomains();
+        }
+
         public EmailAddress Generate()
         {
             var name = _names[_random.Next(0, _names.Length)];

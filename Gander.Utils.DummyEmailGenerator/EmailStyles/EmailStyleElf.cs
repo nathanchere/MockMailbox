@@ -3,7 +3,7 @@ using System.Linq;
 namespace Gander.Utils.DummyEmailGenerator
 {
     public class EmailStyleElf : EmailStyleRandom
-    {
+    {        
         protected override void InitialiseNames()
         {
             var seeds = new[]

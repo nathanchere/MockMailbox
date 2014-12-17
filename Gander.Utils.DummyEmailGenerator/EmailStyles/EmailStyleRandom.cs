@@ -10,7 +10,13 @@ namespace Gander.Utils.DummyEmailGenerator
         private readonly Random _random = new Random();
 
         protected abstract void InitialiseNames();
-        protected abstract void InitialiseDomains();        
+        protected abstract void InitialiseDomains();
+
+        public EmailStyleRandom()
+        {
+            InitialiseNames();
+            InitialiseDomains();
+        }
 
         public EmailAddress Generate()
         {            

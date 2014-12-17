@@ -34,12 +34,11 @@ namespace Gander.Utils.DummyEmailGenerator
             {
                 var id = Guid.NewGuid();
 
-                var name = names.NextName();
-                var email = name + "@somedomain.com";
+                var email = emailAddresses.Generate();
                 var result = new DummyEmail()
                 {
                     To =  "you",
-                    From = new EmailAddress(name, email).ToString(),
+                    From = email.ToString(),
                     Sent = DateTime.Now.ToString(),
                     Subject = "Hey something",
                     Body = "This is just a test email " + id,
