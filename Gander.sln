@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gander.Core", "Gander.Core\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gander.Console", "Gander.Console\Gander.Console.csproj", "{CCC52DC8-C638-4169-A16B-66FD8D5BAAEF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{76D3AAB1-3255-4B31-B9C2-E109A65DF658}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gander.Utils.DummyEmailGenerator", "Gander.Utils.DummyEmailGenerator\Gander.Utils.DummyEmailGenerator.csproj", "{AD45F277-C83C-4D4F-A3ED-31BDF5D9282A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,15 @@ Global
 		{CCC52DC8-C638-4169-A16B-66FD8D5BAAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCC52DC8-C638-4169-A16B-66FD8D5BAAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCC52DC8-C638-4169-A16B-66FD8D5BAAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD45F277-C83C-4D4F-A3ED-31BDF5D9282A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD45F277-C83C-4D4F-A3ED-31BDF5D9282A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD45F277-C83C-4D4F-A3ED-31BDF5D9282A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD45F277-C83C-4D4F-A3ED-31BDF5D9282A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD45F277-C83C-4D4F-A3ED-31BDF5D9282A} = {76D3AAB1-3255-4B31-B9C2-E109A65DF658}
 	EndGlobalSection
 EndGlobal
