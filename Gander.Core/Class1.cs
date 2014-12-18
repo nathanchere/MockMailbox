@@ -53,6 +53,7 @@ namespace Gander.Core
                     Console.WriteLine("Date: {0}", message.Date);
                     Console.WriteLine("Subject: {0}", message.Subject);
                     Console.WriteLine(message.Body);
+                    Console.WriteLine("".PadLeft(40,'='));
 
                 }
 
