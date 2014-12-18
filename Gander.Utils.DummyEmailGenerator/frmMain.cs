@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Gander.Utils.DummyEmailGenerator
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
         }
@@ -58,53 +58,6 @@ namespace Gander.Utils.DummyEmailGenerator
             if (chkStyleViking.Checked) result.AddStyle(new EmailStyleViking());
             return result;
             
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {            
-        }
-                
+        }   
     }   
-
-    public class EmailAddress
-    {
-        public string Name { get; private set; }
-        public string Email { get; private set; }
-
-        public EmailAddress(string name, string email)
-        {
-            Name = name;
-            Email = string.Format("{0}@{1}", name.ToLower(), email).Replace(' ','_');
-        }
-
-        public override string ToString()
-        {
-            if (!string.IsNullOrEmpty(Name) && !string.IsNullOrEmpty(Email)) return string.Format("{0} <{1}>", Name, Email);
-            if (!string.IsNullOrEmpty(Name)) return Name;
-            if (!string.IsNullOrEmpty(Email)) return Email;
-            return "";
-        }
-    }
-
-    public class DummyEmail
-    {
-        public string To;
-        public string From;
-        public string Sent;
-        public string CC;
-        public string Subject;        
-        public string Body;
-
-        public override string ToString()
-        {
-            var result = new StringBuilder();
-            if (!string.IsNullOrEmpty(From)) result.AppendLine(string.Format("From:\t{0}", From));
-            if (!string.IsNullOrEmpty(Sent)) result.AppendLine(string.Format("Sent:\t{0}", Sent));
-            if (!string.IsNullOrEmpty(To)) result.AppendLine(string.Format("To:\t{0}", To));
-            if (!string.IsNullOrEmpty(CC)) result.AppendLine(string.Format("CC:\t{0}", CC));
-            if (!string.IsNullOrEmpty(Subject)) result.AppendLine(string.Format("Subject:\t{0}", Subject));
-            if (!string.IsNullOrEmpty(Body)) result.AppendLine(Body);
-            return result.ToString();
-        }
-    }
 }

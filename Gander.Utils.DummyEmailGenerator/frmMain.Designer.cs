@@ -1,6 +1,6 @@
 ﻿namespace Gander.Utils.DummyEmailGenerator
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,6 @@
             this.dtmDateFrom = new System.Windows.Forms.DateTimePicker();
             this.dtmDateTo = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtOutputPath = new System.Windows.Forms.TextBox();
@@ -60,7 +59,7 @@
             // 
             // numCountToGenerate
             // 
-            this.numCountToGenerate.Location = new System.Drawing.Point(201, 34);
+            this.numCountToGenerate.Location = new System.Drawing.Point(142, 34);
             this.numCountToGenerate.Maximum = new decimal(new int[] {
             32767,
             0,
@@ -80,14 +79,14 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 13);
+            this.label1.Size = new System.Drawing.Size(95, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "How many emails to generate?";
+            this.label1.Text = "How many emails?";
             // 
             // dtmDateFrom
             // 
             this.dtmDateFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtmDateFrom.Location = new System.Drawing.Point(201, 86);
+            this.dtmDateFrom.Location = new System.Drawing.Point(142, 66);
             this.dtmDateFrom.Name = "dtmDateFrom";
             this.dtmDateFrom.Size = new System.Drawing.Size(105, 20);
             this.dtmDateFrom.TabIndex = 5;
@@ -95,7 +94,7 @@
             // dtmDateTo
             // 
             this.dtmDateTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtmDateTo.Location = new System.Drawing.Point(312, 86);
+            this.dtmDateTo.Location = new System.Drawing.Point(142, 92);
             this.dtmDateTo.Name = "dtmDateTo";
             this.dtmDateTo.Size = new System.Drawing.Size(105, 20);
             this.dtmDateTo.TabIndex = 6;
@@ -103,25 +102,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 86);
+            this.label3.Location = new System.Drawing.Point(12, 66);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Date range";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(12, 234);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 55);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "PReset";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(201, 176);
+            this.checkBox1.Location = new System.Drawing.Point(142, 176);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 9;
@@ -138,7 +128,7 @@
             // 
             // txtOutputPath
             // 
-            this.txtOutputPath.Location = new System.Drawing.Point(201, 150);
+            this.txtOutputPath.Location = new System.Drawing.Point(142, 150);
             this.txtOutputPath.Name = "txtOutputPath";
             this.txtOutputPath.Size = new System.Drawing.Size(154, 20);
             this.txtOutputPath.TabIndex = 11;
@@ -179,7 +169,7 @@
             this.grpNameStyles.Controls.Add(this.chkStyleGreek);
             this.grpNameStyles.Controls.Add(this.chkStyleViking);
             this.grpNameStyles.Controls.Add(this.chkStyleElf);
-            this.grpNameStyles.Location = new System.Drawing.Point(449, 12);
+            this.grpNameStyles.Location = new System.Drawing.Point(331, 36);
             this.grpNameStyles.Name = "grpNameStyles";
             this.grpNameStyles.Size = new System.Drawing.Size(139, 192);
             this.grpNameStyles.TabIndex = 16;
@@ -211,22 +201,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 359);
+            this.ClientSize = new System.Drawing.Size(529, 453);
             this.Controls.Add(this.grpNameStyles);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtOutputPath);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dtmDateTo);
             this.Controls.Add(this.dtmDateFrom);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numCountToGenerate);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "frmTestDataGenerator";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numCountToGenerate)).EndInit();
             this.grpNameStyles.ResumeLayout(false);
             this.grpNameStyles.PerformLayout();
@@ -243,7 +231,6 @@
         private System.Windows.Forms.DateTimePicker dtmDateFrom;
         private System.Windows.Forms.DateTimePicker dtmDateTo;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtOutputPath;
