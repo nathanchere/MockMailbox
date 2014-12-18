@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -22,13 +23,14 @@ namespace Gander.Utils.DummyEmailGenerator
         private void button1_Click(object sender, EventArgs e)
         {
             var count = Convert.ToInt32(numCountToGenerate.Value);
-            var path = txtOutputPath.Text;
 
-            Directory.Delete(path, true);
+            if (Directory.Exists(txtOutputPath.Text)) Directory.Delete(txtOutputPath.Text, true);
 
-            GenerateMailbox("donatello", new EmailAddress("the.purple.turtle", "tmnt.com"), count, path, new EmailStyleNinjaTurtle());
-            GenerateMailbox("bjornegar", new EmailAddress("bjornToBeWild", "festfyfan.com"), count, path, new EmailStyleViking());
-            GenerateMailbox("nevafael", new EmailAddress("nevafael", "rivendell.com"), count, path, new EmailStyleElf());
+            GenerateMailbox("donatello", new EmailAddress("the.purple.turtle", "tmnt.com"), count, new EmailStyleNinjaTurtle());
+            GenerateMailbox("bjornegar", new EmailAddress("bjornToBeWild", "festfyfan.com"), count, new EmailStyleViking());
+            GenerateMailbox("nevafael", new EmailAddress("nevafael", "rivendell.com"), count, new EmailStyleElf());
+
+            Process.Start(txtOutputPath.Text);
         }
 
         private DateTime GetDateTime()
@@ -44,7 +46,7 @@ namespace Gander.Utils.DummyEmailGenerator
             return value;
         }
 
-        private void GenerateMailbox(string username, EmailAddress to, int count, string outputPath, IEmailStyle style)
+        private void GenerateMailbox(string username, EmailAddress to, int count, IEmailStyle style)
         {
             var emailGenerator = new EmailAddressGenerator();
             emailGenerator.AddStyle(style);            
@@ -62,8 +64,10 @@ namespace Gander.Utils.DummyEmailGenerator
                     Body = "This is just a test email " + id,
                 };
 
-                var output = Path.Combine(outputPath, to.Name, id + ".txt");
-                File.WriteAllText(output, result.ToString(), Encoding.UTF8);
+                var outPath = Path.Combine(txtOutputPath.Text, to.Name);
+                var outFile = Path.Combine(outPath, id + ".txt");
+                Directory.CreateDirectory(outPath);
+                File.WriteAllText(outFile, result.ToString(), Encoding.UTF8);
             }
         }
                 
