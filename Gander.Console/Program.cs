@@ -12,7 +12,12 @@ namespace Gander.Console
         static void Main(string[] args)
         {
             var client = new MailClient();
-            client.GetEmails();
+            client.GetEmails(new AccountSettings
+            {
+                ServerUri = "localhost",
+                ServerPort = 110,
+                Credentials = new AccountCredentials("the.purple.turtle", "password")
+            });
             System.Console.ReadKey();
         }
     }
