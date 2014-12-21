@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockMailbox.Demo", "MockMailbox.Demo\MockMailbox.Demo.csproj", "{AD45F277-C83C-4D4F-A3ED-31BDF5D9282A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockMailbox", "MockMailbox\MockMailbox.csproj", "{1E983C8D-10BE-4745-ABA5-CC4F8F4798C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockMailbox", "MockMailbox\MockMailbox.csproj", "{681EB32C-0989-4100-A111-5D6ECBBB2A17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{AD45F277-C83C-4D4F-A3ED-31BDF5D9282A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD45F277-C83C-4D4F-A3ED-31BDF5D9282A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD45F277-C83C-4D4F-A3ED-31BDF5D9282A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1E983C8D-10BE-4745-ABA5-CC4F8F4798C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E983C8D-10BE-4745-ABA5-CC4F8F4798C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E983C8D-10BE-4745-ABA5-CC4F8F4798C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E983C8D-10BE-4745-ABA5-CC4F8F4798C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{681EB32C-0989-4100-A111-5D6ECBBB2A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{681EB32C-0989-4100-A111-5D6ECBBB2A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{681EB32C-0989-4100-A111-5D6ECBBB2A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{681EB32C-0989-4100-A111-5D6ECBBB2A17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

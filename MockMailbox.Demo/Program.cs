@@ -14,9 +14,15 @@ namespace MockMailbox
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTestDataGenerator());
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new frmTestDataGenerator());
+            }
+            catch (Exception e)
+            {
+            }
         }
     }
 }

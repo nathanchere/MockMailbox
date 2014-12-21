@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MockMailbox</RootNamespace>
-    <AssemblyName>MockMailbox</AssemblyName>
+    <AssemblyName>MockMailbox.Demo</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MockMailbox.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,12 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMain.Designer.cs">
-      <DependentUpon>frmMain.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmTestDataGenerator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,9 +56,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmTestDataGenerator.resx">
       <DependentUpon>frmTestDataGenerator.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,7 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MockMailbox\MockMailbox.csproj">
-      <Project>{1e983c8d-10be-4745-aba5-cc4f8f4798c6}</Project>
+      <Project>{681eb32c-0989-4100-a111-5d6ecbbb2a17}</Project>
       <Name>MockMailbox</Name>
     </ProjectReference>
   </ItemGroup>
