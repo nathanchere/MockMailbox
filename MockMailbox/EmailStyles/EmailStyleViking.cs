@@ -1,4 +1,6 @@
-﻿namespace Gander.Utils.DummyEmailGenerator
+﻿using MockMailbox.EmailStyles;
+
+namespace MockMailbox
 {
     public class EmailStyleViking : EmailStyleRandom
     {

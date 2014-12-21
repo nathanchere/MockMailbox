@@ -9,8 +9,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MockMailbox.EmailStyles;
 
-namespace Gander.Utils.DummyEmailGenerator
+namespace MockMailbox
 {
     public partial class frmMain : Form
     {

@@ -1,6 +1,7 @@
 using System.Linq;
+using MockMailbox.EmailStyles;
 
-namespace Gander.Utils.DummyEmailGenerator
+namespace MockMailbox
 {
     public class EmailStyleElf : EmailStyleRandom
     {        

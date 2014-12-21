@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using MockMailbox.EmailStyles;
 
-namespace Gander.Utils.DummyEmailGenerator
+namespace MockMailbox
 {
     public class EmailAddressGenerator : IEmailStyle
     {

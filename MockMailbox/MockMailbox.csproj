@@ -39,7 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DummyEmail.cs" />
+    <Compile Include="EmailAddress.cs" />
+    <Compile Include="EmailStyles\EmailAddressGenerator.cs" />
+    <Compile Include="EmailStyles\EmailStyleElf.cs" />
+    <Compile Include="EmailStyles\EmailStyleLookup.cs" />
+    <Compile Include="EmailStyles\EmailStyleNinjaTurtle.cs" />
+    <Compile Include="EmailStyles\EmailStyleRandom.cs" />
+    <Compile Include="EmailStyles\EmailStyleViking.cs" />
+    <Compile Include="EmailStyles\IEmailStyle.cs" />
+    <Compile Include="MarkovNameGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

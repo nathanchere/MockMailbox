@@ -8,7 +8,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Gander.Utils.DummyEmailGenerator
+namespace MockMailbox
 {
     //Generates random names based on the statistical weight of letter sequences
     //in a collection of sample names

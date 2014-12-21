@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Gander.Utils.DummyEmailGenerator
+namespace MockMailbox
 {
     public class DummyEmail
     {

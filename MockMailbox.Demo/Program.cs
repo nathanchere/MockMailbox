@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Gander.Utils.DummyEmailGenerator
+namespace MockMailbox
 {
     static class Program
     {

@@ -1,6 +1,7 @@
 ﻿using System;
+using MockMailbox;
 
-namespace Gander.Utils.DummyEmailGenerator
+namespace MockMailbox.EmailStyles
 {
     public abstract class EmailStyleLookup : IEmailStyle
     {

@@ -1,4 +1,4 @@
-﻿namespace Gander.Utils.DummyEmailGenerator
+﻿namespace MockMailbox
 {
     partial class frmMain
     {

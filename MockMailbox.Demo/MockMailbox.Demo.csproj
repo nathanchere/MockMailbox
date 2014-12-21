@@ -7,10 +7,11 @@
     <ProjectGuid>{AD45F277-C83C-4D4F-A3ED-31BDF5D9282A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gander.Utils.DummyEmailGenerator</RootNamespace>
-    <AssemblyName>Gander.Utils.DummyEmailGenerator</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>MockMailbox</RootNamespace>
+    <AssemblyName>MockMailbox</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,22 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DummyEmail.cs" />
-    <Compile Include="EmailAddress.cs" />
-    <Compile Include="EmailStyles\EmailAddressGenerator.cs" />
-    <Compile Include="EmailStyles\EmailStyleElf.cs" />
-    <Compile Include="EmailStyles\EmailStyleLookup.cs" />
-    <Compile Include="EmailStyles\EmailStyleNinjaTurtle.cs" />
-    <Compile Include="EmailStyles\EmailStyleRandom.cs" />
-    <Compile Include="EmailStyles\EmailStyleViking.cs" />
-    <Compile Include="EmailStyles\IEmailStyle.cs" />
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="MarkovNameGenerator.cs" />
     <Compile Include="frmTestDataGenerator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +73,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,7 +88,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MockMailbox\MockMailbox.csproj">
+      <Project>{1e983c8d-10be-4745-aba5-cc4f8f4798c6}</Project>
+      <Name>MockMailbox</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
